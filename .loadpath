@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loadpath>
+	<pathentry path="lib" type="src"/>
+	<pathentry path="test" type="src"/>
+	<pathentry excluding="test/" path="" type="src"/>
+	<pathentry exported="true" path="org.rubypeople.rdt.launching.RUBY_CONTAINER" type="con"/>
+</loadpath>

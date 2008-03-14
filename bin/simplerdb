@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require 'simplerdb/servlet'
+require 'webrick'
+
+port = ARGV.size > 0 ? ARGV[0] : 8087
+
+config = { :Port => port }
+server = WEBrick::HTTPServer.new(config)
+server.mount("/simplerdb", SimplerDB::RESTServlet)
+
+['INT', 'TERM'].each do |signal| 
+  trap(signal) { server.shutdown }
+end
+    
+server.start
