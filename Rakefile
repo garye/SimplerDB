@@ -11,7 +11,7 @@ Hoe.new('simplerdb', SimplerDB::VERSION) do |p|
   p.rubyforge_name = 'simplerdb'
   p.author = 'Gary Elliott'
   p.email = 'gary@tourb.us'
-  p.summary = "An in-memory implementation of Amazon's SimpleDB REST API "
+  p.summary = "Test your SimpleDB application offline"
   p.description = p.summary
   p.url = p.paragraphs_of('README.txt', 0).first.split(/\n/)[1..-1]
   p.remote_rdoc_dir = '' # Release to root
