@@ -74,7 +74,6 @@ class FunctionalTest < Test::Unit::TestCase
     @sdb.put_attributes("bands", "The Flaming Lips", {:genre => "rock"}, :replace)
     
     results = @sdb.get_attributes("bands", "The Flaming Lips")
-    p results 
     assert results[:attributes]["albums"].sort == ["The Soft Bulletin", "Yoshimi Battles the Pink Robots"]
     assert results[:attributes]["genre"] == ["rock"]
   end
