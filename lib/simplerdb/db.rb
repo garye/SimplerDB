@@ -105,12 +105,12 @@ module SimplerDB
       token = 0 unless token
       @domains.keys.each do |domain|
         break if doms.size == max
-        doms << domain if count >= token
+        doms << domain if count >= token.to_i
         count += 1
       end
       
       if (count >= @domains.size)
-        return doms
+        return doms,nil
       else
         return doms,count
       end

@@ -14,7 +14,7 @@ class SimplerDBTest < Test::Unit::TestCase
   
   def test_create_list_domains
     %w| a b c c c |.each { |d| @db.create_domain(d) }
-    assert @db.list_domains.size == 3
+    assert @db.list_domains[0].size == 3
     
     domains,token = @db.list_domains(1)
     assert domains.size == 1
@@ -32,7 +32,7 @@ class SimplerDBTest < Test::Unit::TestCase
   def test_delete_domain
      %w| a b c |.each { |d| @db.create_domain(d) }
      @db.delete_domain('b')
-     domains = @db.list_domains
+     domains,token = @db.list_domains
      assert domains.size == 2
      assert domains[0] == 'a' && domains[1] == 'c'
      

@@ -4,6 +4,8 @@ require 'builder'
 require 'simplerdb/db'
 require 'simplerdb/client_exception'
 
+# Force every request to be a GET. Otherwise WEBrick can't handle requests
+# from certain clients
 module WEBrick
   class HTTPRequest
     alias old_parse parse

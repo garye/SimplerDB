@@ -44,8 +44,8 @@ INVALID = <<END
 END
 
   def setup
-    @lexer = Dhaka::Lexer.new(QueryLexerSpec)
-    @parser = Dhaka::Parser.new(QueryGrammar)
+    @lexer = Dhaka::Lexer.new(SimplerDB::QueryLexerSpec)
+    @parser = Dhaka::Parser.new(SimplerDB::QueryGrammar)
   end
   
   def test_valid_queries
