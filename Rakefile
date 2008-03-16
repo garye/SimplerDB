@@ -16,6 +16,7 @@ Hoe.new('simplerdb', SimplerDB::VERSION) do |p|
   p.url = p.paragraphs_of('README.txt', 0).first.split(/\n/)[1..-1]
   p.remote_rdoc_dir = '' # Release to root
   p.version = SimplerDB::VERSION
+  p.extra_deps = []
   p.extra_deps << ['dhaka', '>= 2.2.1']
   p.extra_deps << ['builder', '>= 2.0']
 end

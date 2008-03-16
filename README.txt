@@ -47,8 +47,6 @@ The optional command-line argument allows you to set HTTP port (8087 by default)
 * Dhaka[http://dhaka.rubyforge.org]
 * Builder[http://builder.rubyforge.org]
 
-All dependencies should be installed automatically during the SimplerDB gem installation.
-
 == INSTALL:
 
 * <tt>sudo gem install simplerdb</tt>
