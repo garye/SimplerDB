@@ -56,4 +56,5 @@ All dependencies should be installed automatically during the SimplerDB gem inst
 == CAVEATS:
 
 * Since I don't have a SimplerDB beta account this software has not been tested in comparsion to the live web service and the behavior might differ. If you discover such a scenario please report it as a bug.
+* SimplerDB has only been tested with ruby SimpleDB clients. 
 * Query performance with large numbers of items (more than 1000) in a domain could be poor. 
