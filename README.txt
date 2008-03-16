@@ -1,4 +1,4 @@
-*simplerdb
+<b>simplerdb</b>
     by Gary Elliott (gary@tourb.us)
     http://simplerdb.rubyforge.org
 
