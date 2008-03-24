@@ -18,7 +18,7 @@ without a beta account.
 
 In order to use SimplerDB, you will need to replace Amazon's service url (http://sds.amazonaws.com)
 with http://localhost:8087 in your client. RightAWS[http://rightaws.rubyforge.org/right_aws_gem_doc]
-is the only ruby client I'm aware of that lets you do this.
+and AwsSdb[http://rubyforge.org/projects/aws-sdb] are two ruby clients that let you do this.
 
 To write a ruby-based unit test using SimplerDB, you can use the following setup/teardown methods to
 start and stop the server for each test.
