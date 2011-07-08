@@ -1,6 +1,4 @@
-<b>simplerdb</b>
-    by Gary Elliott (gary@tourb.us)
-    http://simplerdb.rubyforge.org
+SimplerDB
 
 == DESCRIPTION:
   
@@ -53,6 +51,7 @@ The optional command-line argument allows you to set HTTP port (8087 by default)
 
 == CAVEATS:
 
+* This was programmed against the very first SimpleDB specification. The world has moved on and this is probably no longer relevant.
 * Since I don't have a SimplerDB beta account this software has not been tested in comparsion to the live web service and the behavior might differ. If you discover such a scenario please report it as a bug.
 * SimplerDB has only been tested with ruby SimpleDB clients. 
 * Query performance with large numbers of items (more than 1000) in a domain could be poor. 
